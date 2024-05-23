@@ -1,0 +1,69 @@
+@font-face {
+    font-family: Main;
+    src: url("./Main.ttf");
+}
+
+.mainFont{
+    font-family: Main;
+}
+
+@keyframes pop{
+    0%{
+        scale: 1;
+    }50%{
+        scale: 1.1;
+    }100%{
+        scale: 1;
+    }
+}
+
+.animate{
+    animation: pop 0.05s ease-in;
+}
+
+#title{
+    text-align: center;
+    font-size: 4rem;
+}
+
+#counter, #time{
+    margin: 4rem;
+    margin-top: 6rem;
+    font-size: 2rem;
+}
+
+#counter{
+    position: absolute;
+    text-align: left;
+}
+
+#time{
+    position: absolute;
+    text-align: right;
+    right: 0px;
+}
+
+#redraw{
+    position: absolute;
+    width: 90px;
+    bottom: 80px;
+    right: 80px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 4px #58ec76;
+}
+
+#originalCard{
+    display: none;
+}
+
+.copyCard{
+    width: 15vw;
+}
+
+.hands{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    width: 75vw;
+}
